@@ -4,7 +4,7 @@
 //var city = document.getElementById("city").value;
 
 fetch(
-    'https://api.openweathermap.org/data/2.5/forecast?q=san+diego&units=imperial&appid=1506e7234cdde16a04f0552631be2b2d'
+    'https://api.openweathermap.org/data/2.5/forecast?q=atlanta&units=imperial&appid=1506e7234cdde16a04f0552631be2b2d'
   )
     // Converts the response to JSON
     .then(function(response) {
