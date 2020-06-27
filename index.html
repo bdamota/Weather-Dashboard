@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./assets/cs/style.css"/>
     <title>Weather Dashboard</title>
   </head>
 
@@ -20,17 +20,26 @@
           <h5 class="search">Search for a City:</h5>
           <form id="user-form" class="card-body">
             <input name="city" id="city" type="text" class="form-input" />
-            <button type="submit" class="btn btn-primary">🔍</button>
+            <button type="submit" class="btn btn-primary" id="submit">🔍</button>
           </form>
         </div>
       </div>
 
-      <div class="col-12 col-md-8">
-        <div id="weather-container" class="list-group"></div>
+      <div >
+        <div id="weatherContainer" class="listGroup">
+            <h3 id="name"></h3>
+            <ul id="temp"></ul>
+            <ul id="humidity"></ul>
+            <ul id="wind"></ul>
+            <ul id="UV"></ul>
+        </div>
+        <div class="col-12 col-md-8">
+            <h3 class="forecast"></h3>
+        </div>
       </div>
 
     </main>
-  <script src="./script.js"></script>
+  <script src="./assets/js/script.js"></script>
   </body>
 
 </html>
