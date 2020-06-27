@@ -46,4 +46,21 @@ header {
     margin-top: -4px;
 }
 
+.listGroup {
+    margin-left: 33%;;
+    margin-top: -45%;
+    border: lightgray;
+    border-style: groove;
+    padding-bottom: 10px;
+}
 
+#name {
+    margin-left: 0%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#temp, #humidity, #wind, #UV {
+    margin-left: -5%;
+
+}

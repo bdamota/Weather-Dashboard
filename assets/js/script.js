@@ -4,7 +4,7 @@
 //var city = document.getElementById("city").value;
 
 fetch(
-    'https://api.openweathermap.org/data/2.5/forecast?q=san+diego&appid=1506e7234cdde16a04f0552631be2b2d'
+    'https://api.openweathermap.org/data/2.5/forecast?q=san+diego&units=imperial&appid=1506e7234cdde16a04f0552631be2b2d'
   )
     // Converts the response to JSON
     .then(function(response) {
@@ -22,10 +22,10 @@ fetch(
 
   
        name.innerHTML = json.city.name; //+ //date + //icon   
-       temp.innerHTML = "Temperature: " + json.list[0].main.temp + "°F";
+       temp.innerHTML = "Temperature: " + json.list[0].main.temp + " °F";
        humidity.innerHTML = "Humidity: " + json.list[0].main.humidity + "%";
-       wind.innerHTML = "Wind Speed" + json.list[0].wind.speed + "MPH"; 
-       //UV.innerHTML = json.main.humidity;    
+       wind.innerHTML = "Wind Speed: " + json.list[0].wind.speed + " MPH"; 
+       UV.innerHTML = "UV Index: " //json.main.humidity;    
     });
 //})
   
