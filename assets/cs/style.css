@@ -1,10 +1,10 @@
-
-.title {
+.hero {
     background-color:navy;
     height: 75px;
     padding-top: 10px;
     color: white;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25pt;
 }
 
 .card {
@@ -12,7 +12,6 @@
     background-color: lightgray;
     height: 575px;
     margin-left: -15px;
-    margin-top: -8px;
     border-radius: 0%;
 }
 
@@ -29,6 +28,7 @@
 
 .form {
     height: 30rem;
+    border-bottom-right-radius: 10px;
 }
 .search {
     padding-left: 10px;
@@ -42,11 +42,12 @@
 }
 
 .listGroup {
-    margin-left: 33%;;
-    margin-top: -36%;
+    margin-left: 105%;;
+    margin-top: -120%;
     border: lightgray;
     border-style: groove;
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 #name {
@@ -56,26 +57,22 @@
 }
 
 #temp, #humidity, #wind, #UV {
-    margin-left: -5%;
+    margin-left: -10%;
 }
 
 .card-deck {
-    margin-left: 36%;
-}
-
-.card-title {
-    padding-top: 15px;
-    text-align: center;
+    margin-left: 98%;
 }
 
 .forecast{
-    height:10rem; 
+    height:11rem;
+    width: 50rem;
     background-color: lightseagreen;
+    border-radius: 10px;
 }
 
 .day {
-    margin-left: 33%;
+    margin-left: 98%;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-

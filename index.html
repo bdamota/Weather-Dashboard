@@ -11,10 +11,7 @@
   </head>
 
   <body>
-    <header class="hero"></header>
-    
-    <main class="flex-row justify-space-between">
-        <h1 class="text-center title">Weather Dashboard</h1>
+    <header class="hero text-center">Weather Dashboard</header>
       <div class="col-12 col-md-4">
         <div class="card form">
           <h5 class="search">Search for a City:</h5>
@@ -23,9 +20,10 @@
             <button type="submit" class="btn btn-primary" id="submit">🔍</button>
           </form>
         </div>
-      </div>
-      <div class="col-md-12">
-        <div id="weatherContainer" class="listGroup col-12 col-md-8">
+      
+      <main class="flex-row justify-space-between">
+      <div class="row-3">
+        <div id="weatherContainer" class="listGroup col-12 col-md-12">
             <h3 id="name" ></h3>
             <ul id="temp"></ul>
             <ul id="humidity"></ul>
@@ -34,53 +32,29 @@
           </div>
      </div>
      <div class="row">
-        <h4 class="col-sm-8 day">5-Day Forecast:</h4>
+        <h4 class="col-sm-12 day">5-Day Forecast:</h4>
+        <div class="card-deck">
+            <div class="card forecast">
+              <div class="day1"></div>
+            </div>
+            <div class="card forecast">
+                <div class="day1"></div>
+              </div>
+              <div class="card forecast">
+                <div class="day1"></div>
+              </div>
+              <div class="card forecast">
+                <div class="day1"></div>
+              </div>
+              <div class="card forecast">
+                <div class="day1"></div>
+              </div>
+        </div>
     </div>
 
-    <section class="row">
-        <div class="col-md-11" id="dailyforecast">
-            <div class="card-deck">
-                <div class="card forecast">
-                  <div class="card-body da1">
-                    <h5 class="card-title">Card title</h5>
-                    <img src="" alt="">
-                    <p class="card-text"></p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card forecast">
-                  <div class="card-body day2">
-                    <h5 class="card-title">Card title</h5>
-                    <img src="" alt="">
-                    <p class="card-text"></p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card forecast">
-                    <div class="card-body day3">
-                      <h5 class="card-title">Card title</h5>
-                      <img src="" alt="">
-                      <p class="card-text"></p>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-                  <div class="card forecast">
-                    <div class="card-body day4">
-                      <h5 class="card-title">Card title</h5>
-                      <img src="" alt="">
-                      <p class="card-text"></p>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-                  <div class="card forecast">
-                    <div class="card-body day5">
-                      <h5 class="card-title">Card title</h5>
-                      <img src="" alt="">
-                      <p class="card-text"></p>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-    </section> 
+
+            
+    
 
     </main>
   <script src="./assets/js/script.js"></script>
