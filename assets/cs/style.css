@@ -33,6 +33,7 @@
 .search {
     padding-left: 10px;
     padding-top: 5px;
+    margin-bottom: -2%;
 }
 
 .btn {
@@ -71,21 +72,36 @@
     border-radius: 10px;
 }
 
-.day {
+.fiveDay {
     margin-left: 98%;
     padding-top: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 3%;
 }
 
-#dayOneDate, #dayTwoDate, #dayThreeDate, #dayFourDate, #dayFiveDate {
+
+.dayOne {
+    margin-left: -2px;
+
+}
+
+ .dayTwo, .dayThree, .dayFour, .dayFive {
+    margin-left: -10px;
+    margin-top: -98%;
+}
+
+
+.card-title {
+    font-size: large;
+    padding-top:10px;
     color: white;
-    padding-left: 10px;
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#dayOneTemp, #dayTwoTemp, #dayThreeTemp, #dayFourTemp, #dayFiveTemp, #dayOneHumidity, #dayTwoHumidity, #dayThreeHumidity, #dayFourHumidity, #dayFiveHumidity {
-    margin-left: -30px;
-    font-size: medium;
+.card-text {
     color: white;
+    font-size: small;
+    padding-bottom: 15px;
 }
+
+
+

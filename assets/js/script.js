@@ -34,8 +34,7 @@ fetch(
     // Day 1 Forecast Content
     $("#day1").append(
       "<div class='forecast card col s12 m6'>"
-      +  "<div class='card-body'>"
-      +  "<div class='card-text'>" +  moment().add(1, 'days').format('M/DD/YYYY') +"</div>"
+      +  "<div class='card-title'>" +  moment().add(1, 'days').format('M/DD/YYYY') +"</div>"
       +  "<div class='card-text'>"  + json.list[1].weather[0].icon + "</div>"
       +  "<div class='card-text'>" + "Temp: " + json.list[1].main.temp + " °F" + "</div>"
       +  "<div class='card-text'>" + "Humidity: " + json.list[1].main.humidity + "%" + "</div>" 
@@ -45,8 +44,7 @@ fetch(
      // Day 2 Forecast Content
      $("#day2").append(
       "<div class='forecast card col s12 m6'>"
-      +  "<div class='card-body'>"
-      +  "<div class='card-text'>" +  moment().add(2, 'days').format('M/DD/YYYY') +"</div>"
+      +  "<div class='card-title'>" +  moment().add(2, 'days').format('M/DD/YYYY') +"</div>"
       +  "<div class='card-text'>"  + json.list[2].weather[0].icon + "</div>"
       +  "<div class='card-text'>" + "Temp: " + json.list[2].main.temp + " °F" + "</div>"
       +  "<div class='card-text'>" + "Humidity: " + json.list[2].main.humidity + "%" + "</div>" 
@@ -56,8 +54,7 @@ fetch(
     // Day 3 Forecast Content 
     $("#day3").append(
       "<div class='forecast card col s12 m6'>"
-      +  "<div class='card-body'>"
-      +  "<div class='card-text'>" +  moment().add(3, 'days').format('M/DD/YYYY') +"</div>"
+      +  "<div class='card-title'>" +  moment().add(3, 'days').format('M/DD/YYYY') +"</div>"
       +  "<div class='card-text'>"  + json.list[3].weather[0].icon + "</div>"
       +  "<div class='card-text'>" + "Temp: " + json.list[3].main.temp + " °F" + "</div>"
       +  "<div class='card-text'>" + "Humidity: " + json.list[3].main.humidity + "%" + "</div>" 
@@ -68,8 +65,7 @@ fetch(
      // Day 4 Forecast Content 
      $("#day4").append(
       "<div class='forecast card col s12 m6'>"
-      +  "<div class='card-body'>"
-      +  "<div class='card-text'>" +  moment().add(4, 'days').format('M/DD/YYYY') +"</div>"
+      +  "<div class='card-title'>" +  moment().add(4, 'days').format('M/DD/YYYY') +"</div>"
       +  "<div class='card-text'>"  + json.list[4].weather[0].icon + "</div>"
       +  "<div class='card-text'>" + "Temp: " + json.list[4].main.temp + " °F" + "</div>"
       +  "<div class='card-text'>" + "Humidity: " + json.list[4].main.humidity + "%" + "</div>" 
@@ -79,8 +75,7 @@ fetch(
     // Day 5 Forecast Content 
     $("#day5").append(
       "<div class='forecast card col s12 m6'>"
-      +  "<div class='card-body'>"
-      +  "<div class='card-text'>" +  moment().add(5, 'days').format('M/DD/YYYY') +"</div>"
+      +  "<div class='card-title'>" +  moment().add(5, 'days').format('M/DD/YYYY') +"</div>"
       +  "<div class='card-text'>"  + json.list[5].weather[0].icon + "</div>"
       +  "<div class='card-text'>" + "Temp: " + json.list[5].main.temp + " °F" + "</div>"
       +  "<div class='card-text'>" + "Humidity: " + json.list[5].main.humidity + "%" + "</div>" 
