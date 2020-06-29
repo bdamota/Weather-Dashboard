@@ -41,8 +41,8 @@
 }
 
 .listGroup {
-    margin-left: 105%;;
-    margin-top: -115%;
+    margin-left: 103%;;
+    margin-top: -118%;
     border: lightgray;
     border-style: groove;
     padding-bottom: 10px;
@@ -71,14 +71,18 @@
 }
 
 #fiveDay {
-    margin-left: 62%;
+    margin-left: 61%;
     padding-top: 2px;
     
 }
 
+.dayOne {
+    margin-left: -9px;
+}
+
  .dayTwo, .dayThree, .dayFour, .dayFive {
-    margin-left: -10px;
-    margin-top: -89%;
+    margin-left: -15px;
+    margin-top: -92%;
 }
 
 
@@ -86,13 +90,12 @@
     font-size: large;
     padding-top:10px;
     color: white;
-    padding-bottom: 10px;
 }
 
 .card-text {
     color: white;
     font-size: small;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 
