@@ -1,7 +1,7 @@
 .hero {
     background-color:navy;
-    height: 75px;
-    padding-top: 10px;
+    height: 85px;
+    padding-top: 15px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25pt;
@@ -17,7 +17,7 @@
 
 .form-input {
     margin-left: -10px;
-    margin-top: -20px;
+    margin-top: -30px;
     border-color: lightgray;
     height: 35px;
 }
@@ -43,7 +43,7 @@
 
 .listGroup {
     margin-left: 105%;;
-    margin-top: -120%;
+    margin-top: -115%;
     border: lightgray;
     border-style: groove;
     padding-bottom: 10px;
@@ -75,4 +75,17 @@
     margin-left: 98%;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+#dayOneDate, #dayTwoDate, #dayThreeDate, #dayFourDate, #dayFiveDate {
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#dayOneTemp, #dayTwoTemp, #dayThreeTemp, #dayFourTemp, #dayFiveTemp, #dayOneHumidity, #dayTwoHumidity, #dayThreeHumidity, #dayFourHumidity, #dayFiveHumidity {
+    margin-left: -30px;
+    font-size: medium;
+    color: white;
 }

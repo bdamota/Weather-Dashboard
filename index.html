@@ -16,7 +16,7 @@
         <div class="card form">
           <h5 class="search">Search for a City:</h5>
           <form id="user-form" class="card-body">
-            <input name="city" id="city" type="text" class="form-input" />
+            <input id="city" type="text" class="form-input" />
             <button type="submit" class="btn btn-primary" id="submit">🔍</button>
           </form>
         </div>
@@ -35,20 +35,45 @@
         <h4 class="col-sm-12 day">5-Day Forecast:</h4>
         <div class="card-deck">
             <div class="card forecast">
-              <div class="day1"></div>
+              <div class="day1">
+                <h5 id="dayOneDate" ></h5>
+                <ul id="dayOneIcon"></ul>
+                <ul id="dayOneTemp"></ul>
+                <ul id="dayOneHumidity"></ul>
+              </div>
             </div>
             <div class="card forecast">
-                <div class="day1"></div>
+              <div class="day2">
+                <h5 id="dayTwoDate" ></h5> 
+                <ul id="dayTwoIcon"></ul>
+                <ul id="dayTwoTemp"></ul>
+                <ul id="dayTwoHumidity"></ul>
               </div>
-              <div class="card forecast">
-                <div class="day1"></div>
-              </div>
-              <div class="card forecast">
-                <div class="day1"></div>
-              </div>
-              <div class="card forecast">
-                <div class="day1"></div>
-              </div>
+            </div>
+            <div class="card forecast">
+                <div class="day3">
+                  <h5 id="dayThreeDate" ></h5> 
+                  <ul id="dayThreeIcon"></ul>
+                  <ul id="dayThreeTemp"></ul>
+                  <ul id="dayThreeHumidity"></ul>
+                </div>
+            </div>
+            <div class="card forecast">
+                <div class="day4">
+                  <h5 id="dayFourDate" ></h5> 
+                  <ul id="dayFourIcon"></ul>
+                  <ul id="dayFourTemp"></ul>
+                  <ul id="dayFourHumidity"></ul>
+                </div>
+            </div>
+            <div class="card forecast">
+                <div class="day5">
+                  <h5 id="dayFiveDate" ></h5> 
+                  <ul id="dayFiveIcon"></ul>
+                  <ul id="dayFiveTemp"></ul>
+                  <ul id="dayFiveHumidity"></ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -57,6 +82,8 @@
     
 
     </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
   </body>
 
