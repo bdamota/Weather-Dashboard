@@ -10,9 +10,7 @@
 .card {
     border: none;
     background-color: lightgray;
-    height: 575px;
-    margin-left: -15px;
-    border-radius: 0%;
+    margin-left: -15px; 
 }
 
 .form-input {
@@ -66,27 +64,21 @@
 }
 
 .forecast{
-    height:11rem;
+    height:10rem;
     width: 10rem;
     background-color: lightseagreen;
     border-radius: 10px;
 }
 
-.fiveDay {
-    margin-left: 98%;
-    padding-top: 10px;
-    margin-bottom: 3%;
-}
-
-
-.dayOne {
-    margin-left: -2px;
-
+#fiveDay {
+    margin-left: 62%;
+    padding-top: 2px;
+    
 }
 
  .dayTwo, .dayThree, .dayFour, .dayFive {
     margin-left: -10px;
-    margin-top: -98%;
+    margin-top: -89%;
 }
 
 

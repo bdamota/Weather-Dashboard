@@ -29,7 +29,17 @@ fetch(
      temp.innerHTML = "Temperature: " + json.list[0].main.temp + " °F";
      humidity.innerHTML = "Humidity: " + json.list[0].main.humidity + "%";
      wind.innerHTML = "Wind Speed: " + json.list[0].wind.speed + " MPH"; 
-     UV.innerHTML = "UV Index: " //json.main.humidity;    
+     UV.innerHTML = "UV Index: " //json.main.humidity; 
+     
+     
+     
+    // Five Day Header
+    $("#fiveDay").append(
+      "<div class='col-md-12'>"
+      +
+      "<h4 id='fiveDay'>" + "5-Day Forecast:" + "</h4>" 
+      +"</div>"
+    ); // End of append 
 
     // Day 1 Forecast Content
     $("#day1").append(
@@ -60,7 +70,6 @@ fetch(
       +  "<div class='card-text'>" + "Humidity: " + json.list[3].main.humidity + "%" + "</div>" 
       + "</div>" 
      ); // End of append 
-
 
      // Day 4 Forecast Content 
      $("#day4").append(
