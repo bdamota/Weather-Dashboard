@@ -37,14 +37,14 @@
 }
 
 .btn {
-    background-color: blue;
+    background-color: navy;
     margin-left: -6px;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 
 .listGroup {
     margin-left: 103%;;
-    margin-top: -118%;
+    margin-top: -116%;
     border: lightgray;
     border-style: groove;
     padding-bottom: 10px;
@@ -54,6 +54,10 @@
 .oneDayTitle {
     padding-top: 10px;
     font-weight: bold;
+}
+
+.oneDayIcon {
+    padding-bottom: -5px;
 }
 
 .oneDay {
@@ -102,7 +106,7 @@
 .card-text {
     color: white;
     font-size: small;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     font-weight: bold;
 }
 
