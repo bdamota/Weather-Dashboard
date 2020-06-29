@@ -20,5 +20,6 @@ https://github.com/bdamota/Weather-Dashboard/blob/master/06-server-side-apis-hom
 ## LINK TO FINAL SCREENTSHOT: 
 
 ## LINK TO DEPLOYED SITE: 
+https://bdamota.github.io/Weather-Dashboard/
 
 
