@@ -110,5 +110,6 @@
     font-weight: normal;
 }
 
-
-
+#cityButtons {
+    padding-top: 5px;
+}

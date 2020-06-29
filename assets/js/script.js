@@ -1,4 +1,3 @@
-
 var submit = document.getElementById("submit");
 
  submit.addEventListener("click", function() {
@@ -123,14 +122,33 @@ fetch(
       +  "<div class='card-text'>" + "Humidity: " + json.list[39].main.humidity + "%" + "</div>" 
       + "</div>" 
      ); 
+     showCities();
   });
 }
 
+// Function to retrieve the stored input that was saved in each input 
+function showCities() {
+  $("#cityButtons").empty(); // empties out previous array 
+  var arrayFromStorage = JSON.parse(localStorage.getItem("allCities")) || []; // Makes all cities searched a string
+  var arrayLength = arrayFromStorage.length; // limits length of array
 
+  for (var i = 0; i < arrayLength; i++) { // Loop so it prepends all cities within the length of the array
+    var cityFromArray = arrayFromStorage[i]; //
 
+    $("#cityButtons").append (
+      "<div class='list-group'>"
+  
+    // City text
+    + "<button class='list-group-item'>" + cityFromArray 
+    + "</button>")
+  } 
+} 
+showCities (); 
 
-
-
-
-  //event listener for button includes display and local storage
+// show city weather on click 
+$("#cityButtons").on("click", ".list-group-item", function(event) {
+  event.preventDefault();
+  var city = ($(this).text());
+  getWeather(city); 
+}) 
 
