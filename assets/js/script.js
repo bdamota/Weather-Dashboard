@@ -27,9 +27,9 @@ function getWeather(city) {
  var city = document.getElementById("city").value;
 
  //fetch to Open Weather API
-fetch(
-  "https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=1506e7234cdde16a04f0552631be2b2d&q=" + city 
-)
+ 
+	fetch("https://api.openweathermap.org/data/2.5/forecast?&units=imperial&appid=1506e7234cdde16a04f0552631be2b2d&q=" + city )
+
   // Converts the response to JSON
   .then(function(response) {
     if (response.ok){
@@ -38,6 +38,7 @@ fetch(
     else {
       alert("Enter correct city name.")
     }
+   
   })
   .then(function(json) {
      var date = moment().format('M/DD/YYYY');
@@ -123,6 +124,7 @@ fetch(
       + "</div>" 
      ); 
      showCities();
+     getUVI();
   });
 }
 
@@ -152,3 +154,5 @@ $("#cityButtons").on("click", ".list-group-item", function(event) {
   getWeather(city); 
 }) 
 
+
+fetch("https://api.openweathermap.org/data/2.5/uvi?appid=b47f8e3eb51a1e96babe844e69241c4c&lat=37.75&lon=-122.37")

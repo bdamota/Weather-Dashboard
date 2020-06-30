@@ -7,12 +7,13 @@ A simple weather dashboard to find the weather in multiple cities.
 - After the search, the city is added to the historical search, allowing it to be searched again easily. 
 
 ## BUILT WITH: 
-- HTML 
-- CSS 
-- JAVASCRIPT 
-- JQUERY 
-- BOOTSTRAP 
-- OPEN WEATHER API 
+- HTML5 
+- CSS3 
+- JavaScript 
+- JQuery
+- Bootstrap
+- Moment.js
+- OpenWeatherAPI 
 
 ## FUNCTIONALITY AND APPEARANCE REQUIREMENTS:
 https://github.com/bdamota/Weather-Dashboard/blob/master/06-server-side-apis-homework-demo.png
