@@ -12,8 +12,6 @@ var submit = document.getElementById("submit");
   getWeather();
  });
 
-
-
 function getWeather(city) {
   // empties out previous data so that it only shows selected weather 
   $("#weatherContainer").empty();
@@ -124,7 +122,6 @@ function getWeather(city) {
       + "</div>" 
      ); 
      showCities();
-     getUVI();
   });
 }
 
@@ -153,6 +150,3 @@ $("#cityButtons").on("click", ".list-group-item", function(event) {
   var city = ($(this).text());
   getWeather(city); 
 }) 
-
-
-fetch("https://api.openweathermap.org/data/2.5/uvi?appid=b47f8e3eb51a1e96babe844e69241c4c&lat=37.75&lon=-122.37")
