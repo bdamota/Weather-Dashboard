@@ -15,10 +15,7 @@ A simple weather dashboard to find the weather in multiple cities.
 - Moment.js
 - OpenWeatherAPI 
 
-## FUNCTIONALITY AND APPEARANCE REQUIREMENTS:
-![image](https://github.com/bdamota/Weather-Dashboard/blob/master/06-server-side-apis-homework-demo.png)
-
-## SCREENTSHOT: 
+## SCREENSHOT: 
 ![image](https://github.com/bdamota/Weather-Dashboard/blob/master/Screen%20Shot%202020-06-29%20at%205.46.21%20PM.png)
 
 ## LINK TO DEPLOYED SITE: 
