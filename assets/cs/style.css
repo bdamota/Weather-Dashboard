@@ -26,7 +26,7 @@
 }
 
 .form {
-    height: 30rem;
+    height: 8rem;
     border-bottom-right-radius: 10px;
 }
 .search {
@@ -49,6 +49,10 @@
     border-style: groove;
     padding-bottom: 10px;
     border-radius: 10px;
+}
+
+#weatherContainer {
+    margin-top: 90%;
 }
 
 .oneDayTitle {
@@ -84,6 +88,10 @@
     padding-bottom: 4px;
     font-weight: bold;
     
+}
+
+#time {
+    font-size: 85%;
 }
 
 .dayOne {

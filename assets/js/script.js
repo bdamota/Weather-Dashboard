@@ -46,10 +46,11 @@ function getWeather(city) {
        "<div class='listGroup col-12 col-md-12'>"
        +  "<h3 class='oneDayTitle'>" +  json.city.name + " (" + date + ")" +"</h3>"
        +  "<div class='oneDayIcon'>"  + "<img src=" + iconUrl +">" + "</div>"
+       +  "<div class='oneDay'>" + "Time: 12pm " + "</div>"
        +  "<div class='oneDay'>" + "Temperature: " + json.list[2].main.temp + " °F" + "</div>"
        +  "<div class='oneDay'>" + "Humidity: " + json.list[2].main.humidity + "%" + "</div>" 
        +  "<div class='oneDay'>" + "Wind Speed: " + json.list[2].wind.speed + " MPH" + "</div>" 
-       +  "<div class='oneDay'>" + "UV Index: "  + "</div>" 
+      //  +  "<div class='oneDay'>" + "UV Index: "  + "</div>" 
        +
        "</div>"
      )
@@ -58,7 +59,7 @@ function getWeather(city) {
     $("#fiveDay").append(
       "<div class='col-md-12'>"
       +
-      "<h4 id='fiveDay'>" + "5-Day Forecast:" + "</h4>" 
+      "<h4 id='fiveDay'>" + "5-Day Forecast: <br> <span id='time'>[Weather at 12pm]</span>" + "</h4>" 
       +"</div>"
     ); 
 
@@ -121,32 +122,32 @@ function getWeather(city) {
       +  "<div class='card-text'>" + "Humidity: " + json.list[39].main.humidity + "%" + "</div>" 
       + "</div>" 
      ); 
-     showCities();
+    //  showCities();
   });
 }
 
-// Function to retrieve the stored input that was saved in each input 
-function showCities() {
-  $("#cityButtons").empty(); // empties out previous array 
-  var arrayFromStorage = JSON.parse(localStorage.getItem("allCities")) || []; // Makes all cities searched a string
-  var arrayLength = arrayFromStorage.length; // limits length of array
+// // Function to retrieve the stored input that was saved in each input 
+// function showCities() {
+//   $("#cityButtons").empty(); // empties out previous array 
+//   var arrayFromStorage = JSON.parse(localStorage.getItem("allCities")) || []; // Makes all cities searched a string
+//   var arrayLength = arrayFromStorage.length; // limits length of array
 
-  for (var i = 0; i < arrayLength; i++) { // Loop so it prepends all cities within the length of the array
-    var cityFromArray = arrayFromStorage[i]; //
+//   for (var i = 0; i < arrayLength; i++) { // Loop so it prepends all cities within the length of the array
+//     var cityFromArray = arrayFromStorage[i]; //
 
-    $("#cityButtons").append (
-      "<div class='list-group'>"
+//     $("#cityButtons").append (
+//       "<div class='list-group'>"
   
-    // City text
-    + "<button class='list-group-item'>" + cityFromArray 
-    + "</button>")
-  } 
-} 
-showCities (); 
+//     // City text
+//     + "<button class='list-group-item'>" + cityFromArray 
+//     + "</button>")
+//   } 
+// } 
+// showCities (); 
 
-// show city weather on click 
-$("#cityButtons").on("click", ".list-group-item", function(event) {
-  event.preventDefault();
-  var city = ($(this).text());
-  getWeather(city); 
-}) 
+// // show city weather on click 
+// $("#cityButtons").on("click", ".list-group-item", function(event) {
+//   event.preventDefault();
+//   var city = ($(this).text());
+//   getWeather(city); 
+// }) 
